@@ -3,7 +3,7 @@ A really simple plugin which logs in to your Discord account via token through a
 
 ![Screenshot of Usage](https://raw.githubusercontent.com/c4p-n1ck/TokenLogin/main/screenshot_usage.gif)
 
-![Screenshot after Usage](https://raw.githubusercontent.com/c4p-n1ck/TokenLogin/main/screenshot_after_usage.png)
+<img alt="Screenshot after Usage" src="https://raw.githubusercontent.com/c4p-n1ck/TokenLogin/main/screenshot_after_usage.png" width="50%">
 
 Special Thanks to [Blog explaining how to login using a token in https://discord.com/app](https://www.followchain.org/login-in-discord-token/)
 
