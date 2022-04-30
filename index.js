@@ -1,5 +1,4 @@
 const { Plugin } = require("powercord/entities");
-const { getModule } = require("powercord/webpack");
 
 
 function login(token) {
