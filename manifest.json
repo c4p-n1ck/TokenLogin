@@ -1,0 +1,7 @@
+{
+  "name": "Login using Token",
+  "version": "1.0.0",
+  "description": "Login using discord token using a command.",
+  "author": "Captain Nick Lucifer*",
+  "license": "MIT"
+}
