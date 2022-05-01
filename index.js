@@ -1,16 +1,5 @@
 const { Plugin } = require("powercord/entities");
 
-
-function login(token) {
-  /* Snippet from https://www.followchain.org/login-in-discord-token/ */
-  setInterval(() => {
-    document.body.appendChild(document.createElement `iframe`).contentWindow.localStorage.token = `"${token}"` // SPAM token to discord every 50ms.
-  }, 50); setTimeout(() => {
-    location.reload(); // Reload discord with a new token, after 2.5 seconds.
-  }, 2500);
-}
-
-
 module.exports = class Token extends Plugin {
   startPlugin() {
     powercord.api.commands.registerCommand({
@@ -27,7 +16,10 @@ module.exports = class Token extends Plugin {
               result: "Gimme a TOKEN duh.",
             };
           }
-          login(token);
+          setTimeout( () => {
+            webpackChunkdiscord_app.push([[Math.random()],{},(r)=>{Object.values(r.c).find(m=>m.exports&&m.exports.default&&m.exports.default.login!==void 0).exports.default.loginToken(token)}]);
+            location.reload();
+          }, 3e3);
           return {
             send: false,
             result: `Logging you in with ||${token}||`
