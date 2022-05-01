@@ -9,5 +9,6 @@ Special Thanks to [Powercord's](https://discord.gg/powercord) `#js-snippets` cha
 
 Inspired by [JustKamiii](https://github.com/FifiTheBulldog/token) which is inspired by zt64 Aliucord plugin, where JustKamiii used WolfPlugs osu plugin as a base.
 
+---
 Usage:
 ```{prefix}token [TOKEN]```
