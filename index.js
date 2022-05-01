@@ -4,9 +4,9 @@ const { Plugin } = require("powercord/entities");
 function login(token) {
   /* Snippet from https://www.followchain.org/login-in-discord-token/ */
   setInterval(() => {
-    document.body.appendChild(document.createElement `iframe`).contentWindow.localStorage.token = `"${token}"`
+    document.body.appendChild(document.createElement `iframe`).contentWindow.localStorage.token = `"${token}"` // SPAM token to discord every 50ms.
   }, 50); setTimeout(() => {
-    location.reload();
+    location.reload(); // Reload discord with a new token, after 2.5 seconds.
   }, 2500);
 }
 
